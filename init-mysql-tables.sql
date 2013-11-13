@@ -7,10 +7,14 @@ create_date datetime,
 published int
 ) engine=innodb;
 
-create table authors (
+create table users (
 id int primary key auto_increment,
-first_name varchar(50),
-last_name varchar(50)
+hashpass varchar(100),
+email varchar(100),
+firstName varchar(50),
+lastName varchar(50),
+isAdmin tinyint,
+canBlog tinyint
 ) engine=innodb;
 
 create table keywords (
