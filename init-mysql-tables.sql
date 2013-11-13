@@ -1,9 +1,9 @@
 create table blogs (
 id int primary key AUTO_INCREMENT,
-author_id int,
+users_id int,
 title varchar(200),
 txt text,
-create_date datetime,
+createDate datetime,
 published int
 ) engine=innodb;
 
