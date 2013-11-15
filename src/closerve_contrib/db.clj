@@ -6,8 +6,6 @@
   "should call this init-db function before using other modules"
   (let [dbd (condp = driver
               "postgres" postgres
-              "mysql" mysql)
-        
-        ] 
+              "mysql" mysql)]
     (defdb db (dbd dbspec))))
 
